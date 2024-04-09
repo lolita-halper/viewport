@@ -81,6 +81,7 @@ table {
 @media (prefers-color-scheme: dark) {
     body {
         background-color: var(--dark-gray);
+        color: var(--white);
       }
 }
 /* CHANGE THE BODY'S BACKGROUND COLOR TO THE DARK GRAY IF THE USER PREFERS DARK MODE */
@@ -312,12 +313,33 @@ img{
 
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
 /* --------------- BEGIN RESPONSIVE IMAGE ADJUST SIZES --------------- */
-@media screen and (min-width: 1380px){
+    @media only screen and (min-width: 1380px) {
+        img {
+        width: 100%;
+        }    
     img{
         width: 300px;
         max-width: 300px;
     }
-}
+    }
+    @media only screen and (max-width: 1380px) and (min-width: 620px) {
+        img {
+        width: 67%;
+        }
+    img{
+        width: 200px;
+        max-width: 200px;
+    }
+    }
+    @media only screen and (max-width: 620px) {
+        img {
+        width: 50%;
+        }
+        img{
+            width: 500px;
+            max-width: 500px;
+        }
+        }
 /* --------------- END RESPONSIVE IMAGE ADJUST SIZES --------------- */
 
 
